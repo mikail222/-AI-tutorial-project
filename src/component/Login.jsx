@@ -7,7 +7,7 @@ const Login = () => {
 
   return (
     <div className="w-[100%]  flex flex-col  justify-center items-center">
-      <div className="lg:w-[30%] flex flex-col justify-center items-center">
+      <div className="  w-[80%] lg:w-[30%]  md:w-[45%] flex flex-col justify-center items-center">
         <img
           src="https://static.vecteezy.com/system/resources/previews/021/059/827/non_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg"
           alt=""
@@ -15,18 +15,18 @@ const Login = () => {
         />
         <p className="text-[30px] my-[2%] font-bold">Welcome back</p>
         <form className="flex flex-col justify-center items-center  w-[100%]">
-          <div className="flex flex-col justify-center w-[80%] h-[8vh] border-[#10a37f] border-[1px] rounded-[8px] px-[2%] mt-[30px]">
+          <div className="flex flex-col justify-center w-[100%] lg:w-[80%] h-[8vh] border-[#10a37f] border-[1px] rounded-[8px] px-[2%] mt-[30px]">
             {toggleLabel === true && (
               <label
                 htmlFor=""
-                className=" flex flex-col w-[35%] text-[#10a37f] top-[-15px] bg-[white] px-[6px] relative"
+                className=" flex flex-col w-[45%] lg:w-[35%] text-[#10a37f] top-[-15px] bg-[white] px-[6px]  text-center  relative"
+                onChange={() => setToggleLabel(false)}
               >
                 Email address{" "}
               </label>
             )}
             <input
               onClick={() => setToggleLabel(true)}
-              onChange={() => setToggleLabel(false)}
               type="email"
               placeholder={toggleLabel == false && "Email  address"}
               required
@@ -34,7 +34,7 @@ const Login = () => {
             />
           </div>
 
-          <button className="text-center w-[80%] h-[8vh] bg-[#10a37f] border-[1px] rounded-[8px] mt-[5%] text-white outline-none">
+          <button className="text-center  w-[100%] lg:w-[80%] h-[8vh] bg-[#10a37f] border-[1px] rounded-[8px] mt-[5%] text-white outline-none">
             Continue
           </button>
           <div className="flex flex-row justify-center items-center gap-[6px] py-[5%]">
@@ -47,7 +47,7 @@ const Login = () => {
             </button>
           </div>
         </form>
-        <div className="flex flex-col border-gray-400 items-center w-[80%] h-[5vh] border-t-[1px] px-[2%] mt-[5%]">
+        <div className="flex flex-col border-gray-400 items-center w-[100%] lg:w-[80%] h-[5vh] border-t-[1px]  mt-[5%]">
           {" "}
           <p className=" w-[10%] top-[-15px] bg-[white] px-[6px] text-[10px] relative">
             OR
@@ -79,7 +79,7 @@ const Login = () => {
             <p>Continue with Apple</p>
           </button>
         </div>
-        <div className="text-[gray] w-[20vw] mt-[8rem] my-[8%] policy px-[5px]">
+        <div className="text-[gray] lg:w-[20vw] mt-[8rem] my-[8%] policy px-[5px]">
           <p>Term of use</p>
           <p className="text-[gray]">|</p>
           <p>Privacy policy</p>
