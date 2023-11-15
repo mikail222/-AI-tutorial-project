@@ -1,0 +1,65 @@
+#root {
+  margin: 0 auto;
+}
+.btn button {
+  @apply bg-[#3c46ff] rounded-[5px]  text-white w-[86%] lg:w-[40%] py-[12px];
+}
+button {
+  @apply outline-none;
+}
+.openai {
+  @apply w-[100%]  flex flex-col justify-center items-center gap-[1rem];
+}
+.openai div,
+.policy {
+  @apply flex flex-row justify-center items-center;
+}
+.policy p {
+  @apply px-[5px] text-[#10a37f];
+}
+.openai div:nth-child(2) {
+  @apply gap-[8px];
+}
+.shortCutSignIn {
+  @apply lg:w-[30vw] flex flex-col items-center gap-[12px];
+}
+.shortCutSignIn button {
+  @apply flex flex-row items-center w-[80%] h-[8vh]  border-[1px] rounded-[8px] gap-[5%] border-gray-400 px-[10px];
+}
+.homeimg {
+  width: 4.5rem;
+  border-radius: 100%;
+  padding: 5px;
+  @apply animate-pulse;
+}
+.aside {
+  margin: 0.5rem;
+  text-align: center;
+  width: 20%;
+  height: 150vh;
+  color: black;
+  margin-top: 1rem;
+  background-color: lightgoldenrodyellow;
+}
+.footer {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  color: black;
+}
+.homeimage {
+  width: 2.5rem;
+  border-radius: 50%;
+  padding: 5px;
+}
+a {
+  padding: 0px 10px;
+}
+.hometags {
+  overflow: auto;
+  height: 86vh;
+  width: 100%;
+}
