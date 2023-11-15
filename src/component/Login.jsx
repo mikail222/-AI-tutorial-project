@@ -15,11 +15,17 @@ const Login = () => {
         />
         <p className="text-[30px] my-[2%] font-bold">Welcome back</p>
         <form className="flex flex-col justify-center items-center  w-[100%]">
-          <div className="flex flex-col justify-center w-[100%] lg:w-[80%] h-[8vh] border-[#10a37f] border-[1px] rounded-[8px] px-[2%] mt-[30px]">
+          <div
+            className={
+              toggleLabel === true
+                ? "flex flex-col justify-center w-[100%] lg:w-[80%] h-[8vh] border-[#10a37f] border-[1px] rounded-[8px] px-[2%] mt-[30px]"
+                : "flex flex-col justify-center w-[100%] lg:w-[80%] h-[8vh] border-gray-300 border-[1px] rounded-[8px] px-[2%] mt-[30px]"
+            }
+          >
             {toggleLabel === true && (
               <label
                 htmlFor=""
-                className=" flex flex-col w-[45%] lg:w-[35%] text-[#10a37f] top-[-15px] bg-[white] px-[6px]  text-center  relative"
+                className=" flex flex-col lg:w-[35%] text-[#10a37f] top-[-15px] bg-[white] px-[6px]  text-center  relative"
                 onChange={() => setToggleLabel(false)}
               >
                 Email address{" "}
