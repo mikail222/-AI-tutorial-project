@@ -6,7 +6,7 @@
   @apply bg-[#3c46ff] rounded-[5px]  text-white w-[86%] lg:w-[40%] py-[12px];
 }
 button {
-  @apply outline-none text-left;
+  @apply outline-none;
 }
 .openai {
   @apply w-[100%]  flex flex-col justify-center items-center gap-[1rem];
@@ -25,7 +25,7 @@ button {
   @apply w-[100%] lg:w-[30vw] md:w-[100%] flex flex-col items-center gap-[12px];
 }
 .shortCutSignIn button {
-  @apply flex flex-row items-center w-[100%] md:w-[100%] lg:w-[80%] h-[8vh]  border-[1px] rounded-[8px] gap-[5%] border-gray-400  py-[5px] px-[10px] leading-5;
+  @apply flex flex-row items-center w-[100%] md:w-[100%] lg:w-[80%] h-[8vh]  border-[1px] rounded-[8px] gap-[5%] border-gray-400  py-[5px] px-[10px] leading-5  text-left;
 }
 .homeimg {
   width: 4.5rem;
