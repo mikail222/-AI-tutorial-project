@@ -1,0 +1,10 @@
+[build]
+command="npm run build"
+publish="/dist"
+base="/"
+
+
+[[redirects]]
+form ="/*"
+to ="/index.html"
+status = 200
